@@ -34,6 +34,10 @@ Happy Horse 1.0 is a **15-billion-parameter unified Transformer** that jointly p
 | #4 | Kling 3.0 1080p Pro | 1241 | ✅ Yes ($13.44/min) | Feb 2026 |
 | #5 | PixVerse V6 | 1240 | ✅ Yes ($5.40/min) | Mar 2026 |
 
+![Artificial Analysis T2V Leaderboard - April 2026](https://d8r3hf7cxo9nn.cloudfront.net/cms/2026-04-08/20260408071633_pi0gts3g.png)
+
+*Artificial Analysis T2V Leaderboard - Early April 2026*
+
 ### Technical Comparison
 
 | Feature | Happy Horse 1.0 | Seedance 2.0 | LTX-2.3 |
