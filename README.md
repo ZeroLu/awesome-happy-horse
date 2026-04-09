@@ -12,10 +12,6 @@
   <a href="https://github.com/ZeroLu/awesome-happy-horse/stargazers"><img src="https://img.shields.io/github/stars/ZeroLu/awesome-happy-horse?style=social" alt="GitHub stars"></a>
 </p>
 
-<p align="center">
-  <a href="./README.md">English</a> | <a href="./README-zh.md">简体中文</a>
-</p>
-
 Last updated on 2026-04-09
 
 
