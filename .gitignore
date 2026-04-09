@@ -27,6 +27,7 @@ dist-ssr
 temp/
 tmp/
 .cache/
+data/
 
 # Video files (examples should be linked, not stored)
 *.mp4
