@@ -82,6 +82,9 @@ Happy Horse 1.0's unified multimodal architecture is purpose-built for joint vid
 
 ### Community & News
 
+- [🔥 Brent Lynch - Source Reveal](https://x.com/BrentLynch/status/2041903421851365838) - Happy Horse from Alibaba Taotian Lab (ex-Kling team lead)
+- [📊 GMI Cloud - Comparison Tests](https://x.com/gmi_cloud/status/2041952066873221288) - Happy Horse vs Veo, Kling, SkyReel, PixVerse
+- [⚠️ Fake Content Warning](https://x.com/BrentLynch/status/2041997193373237561) - Beware of Seedance 2.0 clips claiming to be Happy Horse
 - [FaceSwap-AI Announcement](https://x.com/chennnhhe/status/2041914942509740035) - "The Sora moment for open-source AI video"
 - [HappyhorseAI Official](https://x.com/Happyhorseteam/status/2041909880496517550) - Official launch announcement
 - [Textideo Analysis](https://textideo.com/blog/happy-horse-1-0-redefining-open-source-sota-ai-video-generation) - In-depth technical analysis
@@ -166,6 +169,27 @@ audio.save("output.wav")
 [Audio]: Dialogue language, ambient sounds, music style
 [Duration]: 5-8 seconds
 ```
+
+### Community Example Prompt
+
+From @BrentLynch's X collection:
+
+```
+A flashlight beam exploring a cave system, illuminating wet limestone formations. 
+The light catches crystalline calcite deposits that glitter and flash. 
+Where the beam passes through shallow standing water, it creates bright caustic patterns on the submerged floor. 
+Stalactites cast long, swinging shadows as the flashlight moves. 
+
+Audio: Dripping water echoing, footsteps on wet rock, breathing in enclosed space.
+```
+
+**Why this prompt works:**
+- ✅ Detailed environmental description (cave system, wet limestone)
+- ✅ Dynamic lighting effects (flashlight beam, crystal sparkle, shadows)
+- ✅ Water surface effects (shallow water, caustic patterns)
+- ✅ Motion elements (beam movement, swinging shadows)
+- ✅ Audio cues (dripping water, footsteps, breathing)
+- ✅ Spatial awareness (enclosed space acoustics)
 
 ### Multilingual Support
 
