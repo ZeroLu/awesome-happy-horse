@@ -1,11 +1,22 @@
+<p align="center">
+  <img src="https://artificialanalysis.ai/img/logos/happyhorse_small.svg" alt="Happy Horse logo" width="96" />
+</p>
+
+<p align="center"><strong>Community-curated prompts, benchmark signals, and playable sample results.</strong></p>
+
+<h1 align="center">Awesome Happy Horse 1.0</h1>
+
+<p align="center">
+  <a href="https://github.com/sindresorhus/awesome"><img src="https://awesome.re/badge.svg" alt="Awesome"></a>
+  <a href="https://creativecommons.org/licenses/by/4.0/"><img src="https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg" alt="License: CC BY 4.0"></a>
+  <a href="https://github.com/ZeroLu/awesome-happy-horse/stargazers"><img src="https://img.shields.io/github/stars/ZeroLu/awesome-happy-horse?style=social" alt="GitHub stars"></a>
+</p>
+
+<p align="center">
+  <a href="./README.md">English</a> | <a href="./README-zh.md">简体中文</a>
+</p>
+
 Last updated on 2026-04-09
-
-# Awesome Happy Horse 1.0
-
-[![Awesome](https://awesome.re/badge.svg)](https://github.com/sindresorhus/awesome) [![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/) [![GitHub stars](https://img.shields.io/github/stars/ZeroLu/awesome-happy-horse?style=social)](https://github.com/ZeroLu/awesome-happy-horse/stargazers)
-
-| [English](./README.md) | [简体中文](./README-zh.md) |
-|---|---|
 
 Curated Happy Horse 1.0 prompt examples and sample outputs from the community.
 
