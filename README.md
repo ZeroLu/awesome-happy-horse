@@ -18,6 +18,8 @@
 
 Happy Horse 1.0 is a **15-billion-parameter unified Transformer** that jointly produces video and synchronized audio from text or image prompts, with cinematic 1080p quality and seven-language lip-sync. It's fully open-source with commercial-use rights.
 
+**Official Website:** [happyhorseone.com](https://happyhorseone.com)
+
 ## 🐴 Why Happy Horse 1.0?
 
 | Feature | Happy Horse 1.0 | Seedance 2.0 | LTX-2.3 |
@@ -75,10 +77,10 @@ Happy Horse 1.0's unified multimodal architecture is purpose-built for joint vid
 
 ### Official Resources
 
-- [🏠 Happy Horse Official Website](https://happyhorses.io) - Official website with demos and documentation
+- [🏠 Happy Horse Official Website](https://happyhorseone.com) - Official website with demos and documentation
 - [📦 GitHub Repository](https://github.com/happy-horse/happyhorse-1) - Source code and model weights
-- [📄 Technical Report](https://happyhorses.io/report) - Full architecture and benchmark details
-- [🎮 Online Demo](https://happyhorse.app) - Try Happy Horse 1.0 for free
+- [📄 Technical Report](https://happyhorseone.com/report) - Full architecture and benchmark details
+- [🎮 Online Demo](https://happyhorseone.com/demo) - Try Happy Horse 1.0 for free
 
 ### Community & News
 
