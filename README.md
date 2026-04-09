@@ -11,6 +11,10 @@ Curated Happy Horse 1.0 prompt examples and sample outputs from the community.
 
 Official website: [happyhorseone.com](https://happyhorseone.com)
 
+## What is Happy Horse 1.0?
+
+Happy Horse 1.0 is an open-source AI video generation model focused on high-quality text-to-video and image-to-video results. It gained broad attention in early April 2026 after ranking at the top of multiple community benchmark discussions.
+
 ## News
 
 - 2026-04-08: HappyHorse-1.0 appeared as a new top-ranked model in community benchmark discussions.
