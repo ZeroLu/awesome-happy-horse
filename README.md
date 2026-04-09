@@ -22,6 +22,20 @@ Happy Horse 1.0 is a **15-billion-parameter unified Transformer** that jointly p
 
 ## 🐴 Why Happy Horse 1.0?
 
+### 🏆 Current Leaderboard Position
+
+**Artificial Analysis T2V Leaderboard (No Audio) - Early April 2026**
+
+| Rank | Model | Elo | API Available | Released |
+|------|-------|-----|---------------|----------|
+| **#1** | **HappyHorse-1.0** | **1333** | ❌ No | Apr 2026 |
+| #2 | Seedance 2.0 720p | 1273 | ❌ No public API | Mar 2026 |
+| #3 | SkyReels V4 | 1245 | ✅ Yes ($7.20/min) | Mar 2026 |
+| #4 | Kling 3.0 1080p Pro | 1241 | ✅ Yes ($13.44/min) | Feb 2026 |
+| #5 | PixVerse V6 | 1240 | ✅ Yes ($5.40/min) | Mar 2026 |
+
+### Technical Comparison
+
 | Feature | Happy Horse 1.0 | Seedance 2.0 | LTX-2.3 |
 |---------|-----------------|--------------|---------|
 | Model Size | 15B (Unified) | ~4.5B | 22B |
