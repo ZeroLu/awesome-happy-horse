@@ -33,6 +33,7 @@ tmp/
 *.mov
 *.avi
 *.webm
+!assets/videos/*.mp4
 
 # Large media files
 *.psd
