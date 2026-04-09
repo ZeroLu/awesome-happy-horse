@@ -18,9 +18,7 @@
 
 Last updated on 2026-04-09
 
-Curated Happy Horse 1.0 prompt examples and sample outputs from the community.
 
-Official website: [happyhorseone.com](https://happyhorseone.com)
 
 ## What is Happy Horse 1.0?
 
