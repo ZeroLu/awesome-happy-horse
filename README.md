@@ -14,7 +14,26 @@
 
 ---
 
-This repository focuses on high-fidelity Happy Horse 1.0 prompts sourced from X (Twitter), community contributors, and top prompt engineers. Whether you are looking for cinematic transitions, character consistency, or complex motion sequences, you will find the most effective inputs here to unlock the full potential of Happy Horse 1.0 AI.
+**Last updated:** April 2026
+
+Happy Horse 1.0 is a **15-billion-parameter unified Transformer** that jointly produces video and synchronized audio from text or image prompts, with cinematic 1080p quality and seven-language lip-sync. It's fully open-source with commercial-use rights.
+
+## 🐴 Why Happy Horse 1.0?
+
+| Feature | Happy Horse 1.0 | Seedance 2.0 | LTX-2.3 |
+|---------|-----------------|--------------|---------|
+| Model Size | 15B (Unified) | ~4.5B | 22B |
+| Architecture | Single-Stream Transformer | Diffusion Transformer | Dual-Stream |
+| Text-to-Video Elo | **1355** | 1273 | 1290 |
+| Image-to-Video Elo | **1404** | 1357 | 1345 |
+| Denoising Steps | **8 Steps** (DMD-2) | 25-50 Steps | 12-20 Steps |
+| 1080p Render Time | **~38s** (H100) | ~55s | ~45s |
+| Lip-Sync Languages | **7 Languages** (Native) | External Tool | Limited |
+| Open Source | ✅ **Yes** | ❌ No | ✅ Yes |
+
+**Win Rate:** 80.0% vs OVI 1.1 · 60.9% vs LTX 2.3
+
+---
 
 ## 📑 Table of Contents
 
@@ -30,154 +49,158 @@ This repository focuses on high-fidelity Happy Horse 1.0 prompts sourced from X 
 
 ---
 
-## 1. Cinematic Film Styles
+## 🎬 Core Capabilities
 
-Professional cinematic approaches inspired by renowned directors, perfectly suited for Happy Horse 1.0 prompts.
+Happy Horse 1.0's unified multimodal architecture is purpose-built for joint video and audio generation:
 
-### 1.1 [Example Title]
-
-*Brief description of the style/technique.*
-
-**Prompt:**
-```
-[Prompt content here]
-```
-
-**Source:** [Creator Name](https://x.com/@username) - [Post](https://x.com/...)
+- **🎯 Unified Transformer:** 40-layer self-attention network with modality-specific layers
+- **🎵 Joint Video + Audio:** Synchronized dialogue, ambient sound, and Foley in single pass
+- **⚡ 8-Step DMD-2 Distillation:** Fast generation without classifier-free guidance
+- **🌍 Multilingual Lip-Sync:** English, Mandarin, Cantonese, Japanese, Korean, German, French
+- **📺 1080p Output:** 5-8 second clips at cinematic quality
+- **🔓 Open & Self-Hostable:** Full weights with commercial-use permission
 
 ---
 
-## 2. Advertising & Commercial Branding
+## 📚 Table of Contents
 
-Utilize Happy Horse 1.0 for professional product showcases and brand storytelling.
-
-### 2.1 [Example Title]
-
-*Brief description.*
-
-**Prompt:**
-```
-[Prompt content here]
-```
-
-**Source:** [Creator Name](https://x.com/@username) - [Post](https://x.com/...)
+- [Resources](#resources)
+- [Installation & Deployment](#installation--deployment)
+- [Prompt Engineering Guide](#prompt-engineering-guide)
+- [Contributing](#contributing)
 
 ---
 
-## 3. Social Media & Viral Content
+## Resources
 
-Create attention-grabbing content for social platforms with these creative Happy Horse 1.0 prompts.
+### Official Resources
 
-### 3.1 [Example Title]
+- [🏠 Happy Horse Official Website](https://happyhorses.io) - Official website with demos and documentation
+- [📦 GitHub Repository](https://github.com/happy-horse/happyhorse-1) - Source code and model weights
+- [📄 Technical Report](https://happyhorses.io/report) - Full architecture and benchmark details
+- [🎮 Online Demo](https://happyhorse.app) - Try Happy Horse 1.0 for free
 
-*Brief description.*
+### Community & News
 
-**Prompt:**
-```
-[Prompt content here]
-```
+- [FaceSwap-AI Announcement](https://x.com/chennnhhe/status/2041914942509740035) - "The Sora moment for open-source AI video"
+- [HappyhorseAI Official](https://x.com/Happyhorseteam/status/2041909880496517550) - Official launch announcement
+- [Textideo Analysis](https://textideo.com/blog/happy-horse-1-0-redefining-open-source-sota-ai-video-generation) - In-depth technical analysis
+- [AI Research Weekly](https://x.com/airesearch_ai/status/2041638371538432256) - Featured in weekly AI news roundup
 
-**Source:** [Creator Name](https://x.com/@username) - [Post](https://x.com/...)
+### Comparison & Benchmarks
 
----
-
-## 4. UGC Style
-
-User-Generated Content aesthetics, mimicking everyday camera phone footage.
-
-### 4.1 [Example Title]
-
-*Brief description.*
-
-**Prompt:**
-```
-[Prompt content here]
-```
-
-**Source:** [Creator Name](https://x.com/@username) - [Post](https://x.com/...)
+- [Artificial Analysis Video Arena](https://artificialanalysis.ai) - Leaderboard where Happy Horse ranks #1
+- [Model Comparison Table](https://happyhorses.io#compare) - Side-by-side with Seedance 2.0, LTX-2.3, OVI 1.1
 
 ---
 
-## 5. Anime & Animation Styles
+## Installation & Deployment
 
-Explore various anime and animation techniques with Happy Horse 1.0.
+### System Requirements
 
-### 5.1 [Example Title]
+- **GPU:** NVIDIA H100 or A100 (≥48GB VRAM recommended)
+- **Storage:** ~30GB for model weights
+- **Memory:** 64GB RAM recommended
 
-*Brief description.*
+### Quick Start
 
-**Prompt:**
+```bash
+# Clone the repository
+git clone https://github.com/happy-horse/happyhorse-1.git
+cd happyhorse-1
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Download model weights
+bash download_weights.sh
+
+# Generate your first video
+python demo_generate.py --prompt "a robot dancing on the moon" --duration 5
 ```
-[Prompt content here]
+
+### Python API
+
+```python
+from happyhorse import HappyHorseModel
+
+model = HappyHorseModel.from_pretrained("happy-horse/happyhorse-1.0")
+
+video, audio = model.generate(
+    prompt="an elder on a mountain peak overlooking the valley",
+    duration_seconds=5,
+    fps=24,
+    language="en",
+)
+
+video.save("output.mp4")
+audio.save("output.wav")
 ```
 
-**Source:** [Creator Name](https://x.com/@username) - [Post](https://x.com/...)
+### Performance Benchmarks
+
+| Resolution | Time (H100) | Use Case |
+|------------|-------------|----------|
+| 256p Preview | ~2.0s | Quick iteration |
+| 540p + SR | ~8.0s | Social media |
+| 1080p HD | ~38.4s | Production quality |
 
 ---
 
-## 6. Short-form Drama & Web Series
+## Prompt Engineering Guide
 
-Captivating short-form content with dramatic narratives and viral appeal.
+### Best Practices
 
-### 6.1 [Example Title]
+1. **Be Specific:** Include detailed descriptions of lighting, camera angles, and motion
+2. **Audio Cues:** Mention dialogue, ambient sounds, or music style
+3. **Language Selection:** Specify lip-sync language for dialogue scenes
+4. **Duration:** Keep prompts aligned with 5-8 second output length
 
-*Brief description.*
+### Example Prompt Structure
 
-**Prompt:**
 ```
-[Prompt content here]
+[Style/Genre]: Cinematic, dramatic lighting
+[Subject]: Main character description and action
+[Setting]: Environment and background details
+[Camera]: Shot type, movement, angle
+[Audio]: Dialogue language, ambient sounds, music style
+[Duration]: 5-8 seconds
 ```
 
-**Source:** [Creator Name](https://x.com/@username) - [Post](https://x.com/...)
+### Multilingual Support
+
+Happy Horse 1.0 natively supports lip-sync in 7 languages:
+- 🇺🇸 English
+- 🇨🇳 Mandarin (including dialects)
+- 🇭🇰 Cantonese
+- 🇯🇵 Japanese
+- 🇰🇷 Korean
+- 🇩🇪 German
+- 🇫🇷 French
 
 ---
 
-## 7. Visual Effects & Experimental Styles
+## Contributing
 
-Creative visual effects and experimental approaches for unique artistic outcomes.
-
-### 7.1 [Example Title]
-
-*Brief description.*
-
-**Prompt:**
-```
-[Prompt content here]
-```
-
-**Source:** [Creator Name](https://x.com/@username) - [Post](https://x.com/...)
-
----
-
-## 8. Resources
-
-- [Happy Horse 1.0 Official Page](https://example.com) - Access to Happy Horse 1.0 model
-- [Happy Horse 1.0 How to Use Guide](https://example.com) - Learn how to master AI video generation
-- [Happy Horse API Documentation](https://example.com) - Integrate Happy Horse AI into your workflow
-
----
-
-## 9. Contributing
-
-Contributions are welcome! If you have an awesome Happy Horse 1.0 prompt, please submit a Pull Request.
+Contributions are welcome! If you have an awesome Happy Horse 1.0 prompt or resource, please submit a Pull Request.
 
 ### How to Contribute
 
 1. Fork the repo
 2. Create a new branch (`git checkout -b feature/add-new-prompt`)
-3. Add your prompt in the correct category with the next available number
+3. Add your prompt/resource in the appropriate section
 4. Submit PR
 
 **Please ensure you include:**
-- The full prompt text
+- The full prompt text (if applicable)
 - Source link (original creator's X/Twitter post)
 - Brief description of the style/effect
-- Example video (if available)
+- Example video or image (if available)
 
 ### Contribution Template
 
 ```markdown
-### X.X [Your Title]
+### [Your Title]
 
 *Brief description.*
 
@@ -187,6 +210,11 @@ Contributions are welcome! If you have an awesome Happy Horse 1.0 prompt, please
 ```
 
 **Source:** [Creator Name](https://x.com/@username) - [Post](https://x.com/...)
+
+**Settings:**
+- Duration: 5s
+- Language: English
+- Resolution: 1080p
 ```
 
 ---
@@ -197,10 +225,14 @@ Contributions are welcome! If you have an awesome Happy Horse 1.0 prompt, please
 
 This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
 
+Happy Horse 1.0 model weights are released under commercial-use permitted license.
+
 ---
 
 <div align="center">
 
 **Found this helpful?** ⭐ Star this repo to support the community!
+
+🐴 Built with ❤️ by the Happy Horse community
 
 </div>

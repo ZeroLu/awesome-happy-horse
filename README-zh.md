@@ -14,7 +14,26 @@
 
 ---
 
-本仓库汇集了来自 X (Twitter)、社区贡献者和顶级提示词工程师的高质量 Happy Horse 1.0 提示词。无论你需要电影级转场、角色一致性还是复杂动作序列，都能在这里找到最有效的输入方案。
+**最后更新：** 2026 年 4 月
+
+Happy Horse 1.0 是一个**150 亿参数统一 Transformer 模型**，可从文本或图像提示生成视频和同步音频，支持电影级 1080p 画质和 7 种语言的唇形同步。完全开源，支持商业用途。
+
+## 🐴 为什么选择 Happy Horse 1.0？
+
+| 特性 | Happy Horse 1.0 | Seedance 2.0 | LTX-2.3 |
+|------|-----------------|--------------|---------|
+| 模型规模 | 15B (统一架构) | ~4.5B | 22B |
+| 架构类型 | 单流 Transformer | 扩散 Transformer | 双流架构 |
+| 文生视频 Elo | **1355** | 1273 | 1290 |
+| 图生视频 Elo | **1404** | 1357 | 1345 |
+| 去噪步数 | **8 步** (DMD-2) | 25-50 步 | 12-20 步 |
+| 1080p 渲染时间 | **~38 秒** (H100) | ~55 秒 | ~45 秒 |
+| 唇形同步语言 | **7 种语言** (原生) | 需外部工具 | 有限支持 |
+| 开源 | ✅ **是** | ❌ 否 | ✅ 是 |
+
+**胜率：** 80.0% vs OVI 1.1 · 60.9% vs LTX 2.3
+
+---
 
 ## 📑 目录
 
@@ -30,154 +49,158 @@
 
 ---
 
-## 1. 电影风格
+## 🎬 核心能力
 
-专业电影级拍摄手法，适合 Happy Horse 1.0 生成高质量影片。
+Happy Horse 1.0 的统一多模态架构专为联合视频和音频生成而设计：
 
-### 1.1 [示例标题]
-
-*风格/技术简述。*
-
-**提示词：**
-```
-[在此填写提示词内容]
-```
-
-**来源：** [创作者名称](https://x.com/@username) - [帖子链接](https://x.com/...)
+- **🎯 统一 Transformer：** 40 层自注意力网络，含模态特定层
+- **🎵 联合视频 + 音频：** 单次通过生成同步对话、环境音和音效
+- **⚡ 8 步 DMD-2 蒸馏：** 无需分类器自由引导的快速生成
+- **🌍 多语言唇形同步：** 英语、普通话、粤语、日语、韩语、德语、法语
+- **📺 1080p 输出：** 5-8 秒电影级画质片段
+- **🔓 开源可自托管：** 完整权重，支持商业用途
 
 ---
 
-## 2. 广告与品牌
+## 📑 目录
 
-使用 Happy Horse 1.0 创建专业级产品展示和品牌故事内容。
-
-### 2.1 [示例标题]
-
-*简述。*
-
-**提示词：**
-```
-[在此填写提示词内容]
-```
-
-**来源：** [创作者名称](https://x.com/@username) - [帖子链接](https://x.com/...)
+- [资源链接](#资源链接)
+- [安装与部署](#安装与部署)
+- [提示词工程指南](#提示词工程指南)
+- [贡献指南](#贡献指南)
 
 ---
 
-## 3. 社交媒体与病毒内容
+## 资源链接
 
-为社交平台打造吸睛内容的创意提示词。
+### 官方资源
 
-### 3.1 [示例标题]
+- [🏠 Happy Horse 官网](https://happyhorses.io) - 官方网站，含演示和文档
+- [📦 GitHub 仓库](https://github.com/happy-horse/happyhorse-1) - 源代码和模型权重
+- [📄 技术报告](https://happyhorses.io/report) - 完整架构和基准测试详情
+- [🎮 在线演示](https://happyhorse.app) - 免费试用 Happy Horse 1.0
 
-*简述。*
+### 社区与资讯
 
-**提示词：**
-```
-[在此填写提示词内容]
-```
+- [FaceSwap-AI 宣布](https://x.com/chennnhhe/status/2041914942509740035) - "开源 AI 视频的 Sora 时刻"
+- [HappyhorseAI 官方](https://x.com/Happyhorseteam/status/2041909880496517550) - 官方发布 announcement
+- [Textideo 深度分析](https://textideo.com/blog/happy-horse-1-0-redefining-open-source-sota-ai-video-generation) - 技术深度解析
+- [AI Research 周报](https://x.com/airesearch_ai/status/2041638371538432256) - 每周 AI 新闻精选
 
-**来源：** [创作者名称](https://x.com/@username) - [帖子链接](https://x.com/...)
+### 对比与基准测试
 
----
-
-## 4. UGC 风格
-
-模拟用户生成内容的美学风格，呈现日常手机拍摄质感。
-
-### 4.1 [示例标题]
-
-*简述。*
-
-**提示词：**
-```
-[在此填写提示词内容]
-```
-
-**来源：** [创作者名称](https://x.com/@username) - [帖子链接](https://x.com/...)
+- [Artificial Analysis Video Arena](https://artificialanalysis.ai) - Happy Horse 排名第一的排行榜
+- [模型对比表](https://happyhorses.io#compare) - 与 Seedance 2.0、LTX-2.3、OVI 1.1 的对比
 
 ---
 
-## 5. 动漫与动画
+## 安装与部署
 
-探索各种动漫和动画风格技术。
+### 系统要求
 
-### 5.1 [示例标题]
+- **GPU：** NVIDIA H100 或 A100（推荐 ≥48GB 显存）
+- **存储：** 约 30GB 用于模型权重
+- **内存：** 推荐 64GB RAM
 
-*简述。*
+### 快速开始
 
-**提示词：**
+```bash
+# 克隆仓库
+git clone https://github.com/happy-horse/happyhorse-1.git
+cd happyhorse-1
+
+# 安装依赖
+pip install -r requirements.txt
+
+# 下载模型权重
+bash download_weights.sh
+
+# 生成你的第一个视频
+python demo_generate.py --prompt "a robot dancing on the moon" --duration 5
 ```
-[在此填写提示词内容]
+
+### Python API
+
+```python
+from happyhorse import HappyHorseModel
+
+model = HappyHorseModel.from_pretrained("happy-horse/happyhorse-1.0")
+
+video, audio = model.generate(
+    prompt="一位老人站在山峰上俯瞰山谷",
+    duration_seconds=5,
+    fps=24,
+    language="zh",
+)
+
+video.save("output.mp4")
+audio.save("output.wav")
 ```
 
-**来源：** [创作者名称](https://x.com/@username) - [帖子链接](https://x.com/...)
+### 性能基准
+
+| 分辨率 | 时间 (H100) | 适用场景 |
+|--------|-------------|----------|
+| 256p 预览 | ~2.0 秒 | 快速迭代 |
+| 540p + 超分 | ~8.0 秒 | 社交媒体 |
+| 1080p 高清 | ~38.4 秒 | 生产质量 |
 
 ---
 
-## 6. 短剧与网剧
+## 提示词工程指南
 
-引人入胜的短视频内容，适合迷你剧制作。
+### 最佳实践
 
-### 6.1 [示例标题]
+1. **具体描述：** 包含光线、摄像机角度和动作的详细信息
+2. **音频提示：** 提及对话、环境音或音乐风格
+3. **语言选择：** 为对话场景指定唇形同步语言
+4. **时长控制：** 提示词与 5-8 秒输出长度对齐
 
-*简述。*
+### 示例提示词结构
 
-**提示词：**
 ```
-[在此填写提示词内容]
+[风格/类型]：电影级，戏剧性灯光
+[主体]：主要角色描述和动作
+[场景]：环境和背景细节
+[摄像机]：镜头类型、移动、角度
+[音频]：对话语言、环境音、音乐风格
+[时长]：5-8 秒
 ```
 
-**来源：** [创作者名称](https://x.com/@username) - [帖子链接](https://x.com/...)
+### 多语言支持
+
+Happy Horse 1.0 原生支持 7 种语言的唇形同步：
+- 🇺🇸 英语
+- 🇨🇳 普通话（含方言）
+- 🇭🇰 粤语
+- 🇯🇵 日语
+- 🇰🇷 韩语
+- 🇩🇪 德语
+- 🇫🇷 法语
 
 ---
 
-## 7. 视觉特效与实验风格
+## 贡献指南
 
-创意视觉特效和实验性艺术手法。
-
-### 7.1 [示例标题]
-
-*简述。*
-
-**提示词：**
-```
-[在此填写提示词内容]
-```
-
-**来源：** [创作者名称](https://x.com/@username) - [帖子链接](https://x.com/...)
-
----
-
-## 8. 资源链接
-
-- [Happy Horse 1.0 官方网站](https://example.com) - 访问 Happy Horse 1.0 模型
-- [Happy Horse 1.0 使用指南](https://example.com) - 学习 AI 视频生成技巧
-- [Happy Horse API 文档](https://example.com) - 将 Happy Horse 集成到你的工作流
-
----
-
-## 9. 贡献指南
-
-欢迎贡献！如果你有优秀的 Happy Horse 1.0 提示词，请提交 Pull Request。
+欢迎贡献！如果你有优秀的 Happy Horse 1.0 提示词或资源，请提交 Pull Request。
 
 ### 如何贡献
 
 1. Fork 本仓库
 2. 创建新分支 (`git checkout -b feature/add-new-prompt`)
-3. 在正确的分类中添加你的提示词（使用下一个可用编号）
+3. 在相应部分添加你的提示词/资源
 4. 提交 PR
 
 **请确保包含以下内容：**
-- 完整提示词文本
+- 完整提示词文本（如适用）
 - 来源链接（原创者的 X/Twitter 帖子）
 - 风格/效果简述
-- 示例视频（如有）
+- 示例视频或图片（如有）
 
 ### 贡献模板
 
 ```markdown
-### X.X [你的标题]
+### [你的标题]
 
 *简述。*
 
@@ -187,6 +210,11 @@
 ```
 
 **来源：** [创作者名称](https://x.com/@username) - [帖子链接](https://x.com/...)
+
+**设置：**
+- 时长：5 秒
+- 语言：中文
+- 分辨率：1080p
 ```
 
 ---
@@ -197,10 +225,14 @@
 
 本作品采用 [知识共享署名 4.0 国际许可协议](https://creativecommons.org/licenses/by/4.0/) 进行许可。
 
+Happy Horse 1.0 模型权重在允许商业用途的许可下发布。
+
 ---
 
 <div align="center">
 
 **觉得有帮助？** ⭐ Star 支持社区！
+
+🐴 由 Happy Horse 社区 ❤️ 构建
 
 </div>
