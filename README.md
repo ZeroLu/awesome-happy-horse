@@ -12,31 +12,36 @@
   <a href="https://github.com/ZeroLu/awesome-happy-horse/stargazers"><img src="https://img.shields.io/github/stars/ZeroLu/awesome-happy-horse?style=social" alt="GitHub stars"></a>
 </p>
 
-Last updated on 2026-04-09
-
-
+Last updated on 2026-04-14
 
 ## What is Happy Horse 1.0?
 
-Happy Horse 1.0 is an open-source AI video generation model focused on high-quality text-to-video and image-to-video results. It gained broad attention in early April 2026 after ranking at the top of multiple community benchmark discussions.
+Happy Horse 1.0 is a groundbreaking AI video generation model that has set a new standard for high-quality text-to-video (T2V) and image-to-video (I2V) generation. Developed by an independent research collective (led by Zhang Di, former VP of Kuaishou and technical lead of Kling AI, and composed of a team formerly from Alibaba's Taotian Group ATH-AI Innovation Division), the model initially launched anonymously as a "mystery model" and swiftly dominated global blind-test leaderboards.
+
+Unlike traditional diffusion models that handle video and audio separately, Happy Horse 1.0 is built on a **15-billion-parameter unified 40-layer single-stream "sandwich" Transformer**. It processes text, image, video, and audio tokens in a single shared sequence, enabling native multimodal outputs. 
+
+**Key Technical Capabilities:**
+- **Joint Audio/Video Generation:** Generates natively synced dialogue, ambient sound, and Foley in one single forward pass without requiring post-processing or a separate audio pipeline.
+- **Multilingual Lip-Sync:** Phoneme-level lip synchronization across 7 languages (English, Mandarin, Cantonese, Japanese, Korean, German, and French) with an ultra-low 14.60% Word Error Rate.
+- **Blazing Fast Inference:** Features DMD-2 distillation requiring only 8 denoising steps (no CFG needed), delivering 1080p cinematic video in ~38 seconds on a single NVIDIA H100 GPU.
+- **Multi-Shot Storytelling:** Maintains persistent character identity, smooth motion, and consistent scene transitions automatically.
 
 ## News
-
-- 2026-04-08: HappyHorse-1.0 appeared as a new top-ranked model in community benchmark discussions.
-- 2026-04-08: Multiple creators reported strong multi-shot consistency and instruction following.
-- 2026-04-08: Community members warned about mislabeled clips and suggested verifying sources before comparing quality.
+- **2026-04-08:** HappyHorse-1.0 abruptly appeared on the Artificial Analysis Video Arena leaderboard, bypassing heavyweights like Seedance 2.0 and Kling 3.0 to hit #1 globally in both T2V and I2V.
+- **2026-04-08:** Multiple creators reported unprecedented multi-shot consistency, human-centric motion, and unified multimodal control. 
+- **2026-04-08:** Community members warned about mislabeled clips and suggested verifying sources before comparing quality, given its initial anonymous launch.
 
 ## Leaderboard Data
 
-Top of the Artificial Analysis T2V leaderboard (no audio), early April 2026:
+Top of the Artificial Analysis leaderboard (no audio categories), April 2026:
 
-| Rank | Model | Elo | API Available | Released |
-|---|---|---:|---|---|
-| #1 | HappyHorse-1.0 | 1333 | No | Apr 2026 |
-| #2 | Seedance 2.0 720p | 1273 | No public API | Mar 2026 |
-| #3 | SkyReels V4 | 1245 | Yes ($7.20/min) | Mar 2026 |
-| #4 | Kling 3.0 1080p Pro | 1241 | Yes ($13.44/min) | Feb 2026 |
-| #5 | PixVerse V6 | 1240 | Yes ($5.40/min) | Mar 2026 |
+| Rank | Model | T2V Elo | I2V Elo | API Available | Released |
+|---|---|---:|---:|---|---|
+| #1 | HappyHorse-1.0 | **1333** | **1392** | No (Open Source) | Apr 2026 |
+| #2 | Seedance 2.0 720p | 1273 | - | No public API | Mar 2026 |
+| #3 | SkyReels V4 | 1245 | - | Yes ($7.20/min) | Mar 2026 |
+| #4 | Kling 3.0 1080p Pro | 1241 | - | Yes ($13.44/min) | Feb 2026 |
+| #5 | PixVerse V6 | 1240 | - | Yes ($5.40/min) | Mar 2026 |
 
 ## Prompts & Sample Results
 
