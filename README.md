@@ -12,7 +12,7 @@
   <a href="https://github.com/ZeroLu/awesome-happy-horse/stargazers"><img src="https://img.shields.io/github/stars/ZeroLu/awesome-happy-horse?style=social" alt="GitHub stars"></a>
 </p>
 
-Last updated on 2026-04-14
+Last updated on 2026-04-15
 
 ## What is Happy Horse 1.0?
 
@@ -61,7 +61,71 @@ A massive "CONGRATULATIONS GRADUATES" banner being unfurled across a university 
 
 <video src="https://github.com/user-attachments/assets/b34c99c2-8009-45b7-b67b-528abe1bae44" controls width="720"></video>
 
-### 3) Additional Community Samples (No Public Prompt Text)
+### 3) Flower Time-Lapse Continuity
+
+```text
+A flower blooming and wilting over two weeks, one photo per day. Same vase, same window, same angle. Light changes with weather. Audio: Quiet domestic.
+```
+
+Source: [Brent Lynch](https://x.com/BrentLynch/status/2039462980715524457). The post shared four short outputs under the same prompt.
+
+Output 1
+
+<video src="https://github.com/user-attachments/assets/de6a8b9d-55a0-400e-9356-b5003c936a3f" controls width="720"></video>
+
+Output 2
+
+<video src="https://github.com/user-attachments/assets/645e7e04-7a2a-40b2-9475-e0abafc61bd6" controls width="720"></video>
+
+Output 3
+
+<video src="https://github.com/user-attachments/assets/c8002736-c7f3-44b7-8bde-d14b7322576a" controls width="720"></video>
+
+Output 4
+
+<video src="https://github.com/user-attachments/assets/8f516a9b-24d6-40d6-8369-87b86ba36471" controls width="720"></video>
+
+### 4) 1990s Action Cartoon Firebending
+
+```text
+1990s action cartoon style. A young martial artist performs a firebending kata. The flames are hand-drawn with thick outlines and bold orange-yellow gradients. Dynamic camera swoops around the character. The fighting stance shows anime influence while maintaining Western animation proportions. Smoke effects use the signature layered look of the era. Audio: Whooshing fire, martial arts grunts, dramatic percussion.
+```
+
+Source: [Brent Lynch](https://x.com/BrentLynch/status/2039465595041890540)
+
+<video src="https://github.com/user-attachments/assets/21fea2ed-ecc9-4120-8ac9-e222a62db5a9" controls width="720"></video>
+
+### 5) Cyberpunk Android Repair Bay
+
+```text
+Cyberpunk anime style (aesthetic). A female android sits in a maintenance chair as robotic arms repair her damaged arm. The skin panel is open, revealing intricate servos and fiber-optic cables beneath. Her eyes are blank and unfocused during the repair cycle. Neon city lights filter through rain-streaked windows. Cool blue and pink color palette with high contrast shadows. Audio: Mechanical whirring, the hum of electronics, distant city ambience.
+```
+
+Source: [Brent Lynch](https://x.com/BrentLynch/status/2039465595041890540)
+
+<video src="https://github.com/user-attachments/assets/bcbf409c-09c3-472c-a5db-e09c419aebf6" controls width="720"></video>
+
+### 6) Voice Assistant Day-In-The-Life
+
+```text
+A time-lapse of a family using a home voice assistant throughout the day. From setting morning alarms, playing music, checking the weather, and controlling smart lights, the product integrates seamlessly into their daily life.
+```
+
+Source: [Justine Moore](https://x.com/venturetwins/status/2041556160055333180)
+
+<video src="https://github.com/user-attachments/assets/c1b705b4-6231-4d1c-a5f0-5f3eba59b91e" controls width="720"></video>
+
+### 7) Tracking Shot Street Escape
+
+```text
+TRACKING SHOT follows her from behind as she runs through the street. Sari fabric flows and trails behind her, catching the wind. CLOSE-UP on bare feet hitting the ground. Fabric billowing. She glances back. Keeps running. Determined. Footsteps, fabric whooshing, and heavy breathing.
+```
+
+Source: [Brent Lynch](https://x.com/BrentLynch/status/2042316613329043472)
+
+<video src="https://github.com/user-attachments/assets/d2374d19-7c89-452f-8e3a-7483806f5cd4" controls width="720"></video>
+
+### 8) Additional Community Samples (No Public Prompt Text)
 
 These are useful output references where full prompt text was not publicly shared.
 
@@ -92,6 +156,18 @@ These are useful output references where full prompt text was not publicly share
 - Community sample (multi-shot)
 
 <video src="https://github.com/user-attachments/assets/0d0b701b-2032-4e89-8e30-6abf883b8d03" controls width="720"></video>
+
+- Wildminder: HappyHorse-1.0 vs All
+
+<video src="https://github.com/user-attachments/assets/c8ee9ee9-032a-478c-aed5-64745f6f8b44" controls width="720"></video>
+
+- GENEL: HappyHorse vs Seedance 2.0
+
+<video src="https://github.com/user-attachments/assets/3f070c3a-6910-4fc6-9cd5-8201ac9e97f4" controls width="720"></video>
+
+- GMI Cloud: Seedance 2.0 Comparison Challenge
+
+<video src="https://github.com/user-attachments/assets/9b632903-cdf4-4507-b0af-d436aa1c6a72" controls width="720"></video>
 
 ## Resources
 
