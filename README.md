@@ -67,23 +67,10 @@ A massive "CONGRATULATIONS GRADUATES" banner being unfurled across a university 
 A flower blooming and wilting over two weeks, one photo per day. Same vase, same window, same angle. Light changes with weather. Audio: Quiet domestic.
 ```
 
-Source: [Brent Lynch](https://x.com/BrentLynch/status/2039462980715524457). The post shared four short outputs under the same prompt.
-
-Output 1
+Source: [Brent Lynch](https://x.com/BrentLynch/status/2039462980715524457). 
 
 <video src="https://github.com/user-attachments/assets/de6a8b9d-55a0-400e-9356-b5003c936a3f" controls width="720"></video>
 
-Output 2
-
-<video src="https://github.com/user-attachments/assets/645e7e04-7a2a-40b2-9475-e0abafc61bd6" controls width="720"></video>
-
-Output 3
-
-<video src="https://github.com/user-attachments/assets/c8002736-c7f3-44b7-8bde-d14b7322576a" controls width="720"></video>
-
-Output 4
-
-<video src="https://github.com/user-attachments/assets/8f516a9b-24d6-40d6-8369-87b86ba36471" controls width="720"></video>
 
 ### 4) 1990s Action Cartoon Firebending
 
@@ -172,9 +159,6 @@ These are useful output references where full prompt text was not publicly share
 ## Resources
 
 - [Happy Horse Official Website](https://happyhorseone.com)
-- [Happy Horse GitHub](https://github.com/happy-horse/happyhorse-1)
-- [Happy Horse Technical Report](https://happyhorseone.com/report)
-- [Happy Horse Demo](https://happyhorseone.com/demo)
 
 ## Contributing
 
